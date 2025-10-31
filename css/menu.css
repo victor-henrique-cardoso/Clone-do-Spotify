@@ -1,0 +1,38 @@
+nav{
+    background-color: black;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    padding: 20px;
+}
+
+nav li img{
+    width: 35px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    
+    display: flex;             /* Faz os itens ficarem lado a lado */
+    justify-content: flex-start;   /* Centraliza os itens */
+}
+nav li{
+    margin: 0 20px;
+    
+}
+
+.pesquisa{
+  
+    background-color: rgba(63, 61, 61, 0.932);
+    border-radius: 20px;
+   
+    height: 40px;
+   
+}
+
+.pesquisatexto{
+    text-align: center;
+    color: antiquewhite;
+}
