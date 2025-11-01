@@ -1,4 +1,4 @@
-nav{
+.navegacao{
     background-color: black;
     width: 100%;
     left: 0;
@@ -15,7 +15,7 @@ nav{
 
 }
 
-nav  img{
+.navegacao  img{
     width: 40px;
     height: 40px;
 }
@@ -55,6 +55,7 @@ nav  img{
 
   
   .botaoPlanoPremio{
+    height:  35px;
     background-color: white;
     color: black;
     padding: 10px 20px;
