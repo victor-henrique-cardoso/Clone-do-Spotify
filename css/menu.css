@@ -4,17 +4,20 @@ nav{
     left: 0;
     position: fixed;
     top: 0;
-    padding: 20px;
-    list-style: none;
+    padding: 10px;
+   
     margin: 0;
     
     display: flex;             /* Faz os itens ficarem lado a lado */
-    justify-content: flex-start;   /* Centraliza os itens */
+    
+    gap: 30px;
+    align-items: center;
 
 }
 
 nav  img{
     width: 40px;
+    height: 40px;
 }
 
 
@@ -22,12 +25,12 @@ nav  img{
 .caixa-pesquisa {
     position: relative;
     width: 500px;
-    margin: 0 auto;
+   
   }
   
-  .pesquisa {
-    width: 100%;
-    height: 45px;
+.pesquisa {
+    width: 200px;
+    height: 35px;
     background-color: rgba(63, 61, 61, 0.932);
     border-radius: 25px;
     border: 1px solid #555;
@@ -35,7 +38,7 @@ nav  img{
     font-size: 16px;
     padding: 0 45px 0 45px; /* espaço para os ícones */
     outline: none;
-  }
+}
   
   .caixa-pesquisa i {
     position: absolute;
@@ -49,9 +52,79 @@ nav  img{
     left: 15px;
   }
   
-  .caixa-pesquisa .direita {
-    right: 15px;
-    border-left: 1px solid #777;
-    padding-left: 12px;
-  }
+
   
+  .botaoPlanoPremio{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+    margin-left: 20px;
+  }
+
+  .botaoPlanoPremio:hover{
+    transform: scale(1.05);
+  }
+
+  .botaoDeInstalarAPP{
+    background-color: black;
+    color: rgb(139, 137, 137);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+    left: 5px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .botaoDeInstalarAPP:hover{
+    transform: scale(1.05);
+    color: white;
+  }
+
+  .iconSino{
+    color: rgb(139, 137, 137);
+    width: 50px;
+    transition: 0.3s;
+  }
+
+  .iconSino:hover{
+    color: white;
+    transform: scale(1.05);
+  }
+
+  .iconperfil{
+    color: rgb(139, 137, 137);
+    width: 50px;
+   transition: 0.3s;
+  }
+  .iconperfil:hover{
+    color: white;
+    transform: scale(1.05);
+  }
+
+  .homeicon{
+    background-color:  rgba(63, 61, 61, 0.932);
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .homeicon:hover{
+   transform: scale(1.05);
+  
+  }
+
+  .iconcasa{
+    color: white;
+  }
