@@ -1,99 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
-    <link rel="stylesheet" href="../css/menu.css">
-       <link rel="stylesheet" href="../css/pagina.css">
-       <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify</title>
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/pagina.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 </head>
+
 <body>
-     <nav class="navegacao">
-        
-        <img src="../imagem/9c9aaf47-d571-4c8d-bd9d-c05be5e4c9d0.png">
-           
-           
-         <div class="homeicon">
-         <i class="fa-solid fa-house iconcasa"></i>
+  <nav class="navegacao">
 
-         </div>
-        
-        <div class="caixa-pesquisa">
-          <i class="fa fa-search esquerda"></i>
-          <input type="text" class="pesquisa" placeholder="O que você quer ouvir?" />  
-        </div>
+    <img src="../imagem/9c9aaf47-d571-4c8d-bd9d-c05be5e4c9d0.png">
 
 
-       <button class="botaoPlanoPremio">Ver planos Premium</button> 
+    <div class="homeicon">
+      <i class="fa-solid fa-house iconcasa"></i>
 
-       <button class="botaoDeInstalarAPP">
-        <i class="fa-solid fa-download"></i> Instalar aplicativo</button>
+    </div>
 
-      <i class="fa-regular fa-bell iconSino"  ></i>
+    <div class="caixa-pesquisa">
+      <i class="fa fa-search esquerda"></i>
+      <input type="text" class="pesquisa" placeholder="O que você quer ouvir?" />
+    </div>
 
-      <i class="fa-solid fa-users iconperfil"></i>
-     </nav>
-     <div class="conteiner">
-        <div class="biblioteca">
-        <div class="topblibioteca">
-          <h4 class="textotitulobiblioteca">Sua biblioteca</h4>
+
+    <button class="botaoPlanoPremio">Ver planos Premium</button>
+
+    <button class="botaoDeInstalarAPP">
+      <i class="fa-solid fa-download"></i> Instalar aplicativo</button>
+
+    <i class="fa-regular fa-bell iconSino"></i>
+
+    <i class="fa-solid fa-users iconperfil"></i>
+  </nav>
+  <div class="conteiner">
+    <div class="biblioteca">
+      <div class="topblibioteca">
+        <h4 class="textotitulobiblioteca">Sua biblioteca</h4>
         <div class="diviconadd">
           <i class="fa-solid fa-plus "></i>
         </div>
-        
-        </div>
 
-        <div class="botaos">
-
-       <button class="botaoplay">Playlist</button>
-       <button class="botaoplay">Artistas</button>
-        </div>
-
-     </div>
-      <div class="conteudo">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sapiente ad vel recusandae! Magni consequatur illo totam rerum doloremque hic inventore, praesentium dignissimos, incidunt sed quisquam ipsum sunt! Ipsa, molestias!</p>
-     
       </div>
-     </div>
 
-   <div class="player">
-  <div class="player-left">
-    <img src="/imagem/Poesia-Acustica.webp" alt="Capa da música" class="capa-musica">
-    <div class="info-musica">
-      <h4>Poesia-Acustica</h4>
-      <p> Mc Hariel · Negra Li · Ducon · Kevin O Chris</p>
-    </div>
-  </div>
+      <div class="botaos">
 
-  <div class="player-center">
-    <div class="controles">
-      <i class="fa-solid fa-shuffle"></i>
-      <i class="fa-solid fa-backward-step"></i>
-      <button class="btn-play"><i class="fa-solid fa-pause"></i></button>
-      <i class="fa-solid fa-forward-step"></i>
-      <i class="fa-solid fa-repeat"></i>
-    </div>
-
-    <div class="barra-tempo">
-      <span>2:44</span>
-      <div class="barra">
-        <div class="progresso"></div>
+        <button class="botaoplay">Playlist</button>
+        <button class="botaoplay">Artistas</button>
       </div>
-      <span>3:03</span>
+
+    </div>
+    <div class="conteudo">
+
+      <div class="botaos">
+        <button class="botaodoconteudo">Tudo</button>
+        <button class="botaodoconteudo">música</button>
+        <button class="botaodoconteudo">Podcasts</button>
+      </div>
+
+    </div>
+
+    <div class="algumdamusicainfo">
+
+      <video class="video" autoplay loop muted>
+        <source src="/imagem/clipmusica.mp4" type="video/mp4">
+      </video>
+
+      <div class="overlay">
+
+        <h2>Poesia-Acustica</h2>
+        <p>Mc Hariel · Negra Li · Ducon · Kevin O Chris</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="player">
+    <div class="player-left">
+      <img src="/imagem/Poesia-Acustica.webp" alt="Capa da música" class="capa-musica">
+      <div class="info-musica">
+        <h4>Poesia-Acustica</h4>
+        <p> Mc Hariel · Negra Li · Ducon · Kevin O Chris</p>
+      </div>
+    </div>
+
+    <div class="player-center">
+      <div class="controles">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward-step"></i>
+        <button class="btn-play"><i class="fa-solid fa-pause"></i></button>
+        <i class="fa-solid fa-forward-step"></i>
+        <i class="fa-solid fa-repeat"></i>
+      </div>
+
+      <div class="barra-tempo">
+        <span>2:44</span>
+        <div class="barra">
+          <div class="progresso"></div>
+        </div>
+        <span>3:03</span>
+      </div>
+    </div>
+
+    <div class="player-right">
+      <i class="fa-solid fa-volume-high"></i>
+      <input type="range" class="volume" />
     </div>
   </div>
 
-  <div class="player-right">
-    <i class="fa-solid fa-volume-high"></i>
-    <input type="range" class="volume" />
-  </div>
-</div>
 
-     
 </body>
+
 </html>
