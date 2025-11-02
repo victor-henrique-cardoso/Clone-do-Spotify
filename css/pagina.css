@@ -133,7 +133,6 @@ body {
     left: 15px;
     color: white;
     z-index: 2;
-    /* garante que fica acima do vídeo */
     position: relative;
 }
 
@@ -166,11 +165,8 @@ body {
 
 .conteiner {
     display: flex;
-    /* deixa as divs lado a lado */
     gap: 10px;
-    /* espaço entre elas */
     margin-left: 20px;
-
 }
 
 .player {
@@ -259,7 +255,6 @@ body {
 
 .progresso {
     width: 75%;
-    /* porcentagem do progresso da música */
     height: 100%;
     background-color: white;
     border-radius: 2px;
@@ -281,11 +276,8 @@ body {
 
 .playlist-container {
     display: flex;
-    /* coloca um do lado do outro */
     flex-wrap: wrap;
-    /* quebra linha se não couber */
     gap: 20px;
-    /* espaçamento entre os cards */
     padding: 10px;
 }
 
@@ -306,7 +298,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* garante que o h4 e o p fiquem no topo */
     font-size: 12px;
     line-height: 14px;
 }
@@ -318,7 +309,6 @@ body {
 
 .playlist-info p {
     margin-top: 2px;
-    /* ajusta a distância do h4 */
     opacity: 0.8;
 }
 
