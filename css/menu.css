@@ -1,131 +1,172 @@
-.navegacao{
-    background-color: black;
-    width: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    padding: 10px;
-   
-    margin: 0;
-    
-    display: flex;             /* Faz os itens ficarem lado a lado */
-    
-    gap: 30px;
-    align-items: center;
+.navegacao {
+  background-color: black;
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+
+  margin: 0;
+
+  display: flex;
+  /* Faz os itens ficarem lado a lado */
+
+  gap: 30px;
+  align-items: center;
 
 }
 
-.navegacao  img{
-    width: 40px;
-    height: 40px;
+.navegacao img {
+  width: 40px;
+  height: 40px;
 }
 
 
 
 .caixa-pesquisa {
-    position: relative;
-    width: 500px;
-   
-  }
-  
-.pesquisa {
-    width: 200px;
-    height: 35px;
-    background-color: rgba(63, 61, 61, 0.932);
-    border-radius: 25px;
-    border: 1px solid #555;
-    color: white;
-    font-size: 16px;
-    padding: 0 45px 0 45px; /* espaço para os ícones */
-    outline: none;
+  position: relative;
+  width: 500px;
+
 }
-  
-  .caixa-pesquisa i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #b3b3b3;
-    font-size: 18px;
-  }
-  
-  .caixa-pesquisa .esquerda {
-    left: 15px;
-  }
-  
 
-  
-  .botaoPlanoPremio{
-    height:  35px;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 20px;
-    margin-left: 20px;
+.pesquisa {
+  width: 200px;
+  height: 35px;
+  background-color: rgba(63, 61, 61, 0.932);
+  border-radius: 25px;
+  border: 1px solid #555;
+  color: white;
+  font-size: 16px;
+  padding: 0 45px 0 45px;
+  /* espaço para os ícones */
+  outline: none;
+}
+
+.caixa-pesquisa i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #b3b3b3;
+  font-size: 18px;
+}
+
+.caixa-pesquisa .esquerda {
+  left: 15px;
+}
+
+
+
+.botaoPlanoPremio {
+  height: 35px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.botaoPlanoPremio:hover {
+  transform: scale(1.05);
+}
+
+.botaoDeInstalarAPP {
+  background-color: black;
+  color: rgb(139, 137, 137);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 20px;
+  left: 5px;
+  gap: 4px;
+  display: flex;
+  align-items: center;
+
+}
+
+.botaoDeInstalarAPP:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+.iconSino {
+  color: rgb(139, 137, 137);
+  width: 50px;
+  transition: 0.3s;
+}
+
+.iconSino:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+.iconperfil {
+  color: rgb(139, 137, 137);
+  width: 50px;
+  transition: 0.3s;
+}
+
+.iconperfil:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+.homeicon {
+  background-color: rgba(63, 61, 61, 0.932);
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeicon:hover {
+  transform: scale(1.05);
+
+}
+
+.iconcasa {
+  color: white;
+}
+
+
+@media (max-width: 1200px) {
+  .caixa-pesquisa {
+    width: 300px;
   }
 
-  .botaoPlanoPremio:hover{
-    transform: scale(1.05);
+  .pesquisa {
+    width: 180px;
   }
 
-  .botaoDeInstalarAPP{
-    background-color: black;
-    color: rgb(139, 137, 137);
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 20px;
-    left: 5px;
-    gap: 4px;
-    display: flex;
-    align-items: center;
+  .botaoPlanoPremio {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
 
+@media (max-width: 900px) {
+  .navegacao {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .botaoDeInstalarAPP:hover{
-    transform: scale(1.05);
-    color: white;
+  .caixa-pesquisa {
+    width: 100%;
   }
 
-  .iconSino{
-    color: rgb(139, 137, 137);
-    width: 50px;
-    transition: 0.3s;
+  .pesquisa {
+    width: 100%;
   }
 
-  .iconSino:hover{
-    color: white;
-    transform: scale(1.05);
+  .botaoPlanoPremio,
+  .botaoDeInstalarAPP {
+    width: 100%;
+    margin: 5px 0;
   }
-
-  .iconperfil{
-    color: rgb(139, 137, 137);
-    width: 50px;
-   transition: 0.3s;
-  }
-  .iconperfil:hover{
-    color: white;
-    transform: scale(1.05);
-  }
-
-  .homeicon{
-    background-color:  rgba(63, 61, 61, 0.932);
-    border-radius: 40px;
-    width: 40px;
-    height: 40px;
-    transition: 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .homeicon:hover{
-   transform: scale(1.05);
-  
-  }
-
-  .iconcasa{
-    color: white;
-  }
+}
